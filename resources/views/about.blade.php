@@ -12,13 +12,6 @@
                     <div class="fs-5 text-muted fw-semibold">Save thousands to millions of bucks by using single tool for different
                     <br />amazing and outstanding and usefull great and useful admin</div>
                 </div>
-                <div class="overlay">
-                    <img class="w-100 card-rounded" src="assets/media/stock/1600x800/img-1.jpg" alt="" />
-                    <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-                        <a href="../../demo37/dist/pages/pricing.html" class="btn btn-primary">Pricing</a>
-                        <a href="../../demo37/dist/pages/careers/apply.html" class="btn btn-light-primary ms-3">Join Us</a>
-                    </div>
-                </div>
             </div>
             <div class="fs-5 fw-semibold text-gray-600">
                 <p class="m-0">First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are sharp. From the seed of the idea to finally hitting “Publish,” you might spend several days or maybe even a week “writing” a blog post, but it’s important to spend those vital hours planning your post and even thinking about
@@ -99,31 +92,6 @@
             <p class="fs-5 fw-semibold text-gray-600 text-start mb-15">First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are sharp. From the seed of the idea to finally hitting “Publish,” you might spend several days or maybe even a week “writing” a blog post, but it’s important to spend those vital hours planning
             <a href="../../demo37/dist/pages/blog/post.html" class="link-primary pe-1">Your Post</a>(yes, thinking counts as working if you’re a blogger) before you actually write it.</p>
             <a href="../../demo37/dist/pages/careers/apply.html" class="btn btn-primary mb-5">Apply Now</a>
-        </div>
-        <div class="card mb-4 bg-light text-center">
-            <div class="card-body py-12">
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/github.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/behance.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/pinterest-p.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/twitter.svg" class="h-30px my-2" alt="" />
-                </a>
-                <a href="#" class="mx-4">
-                    <img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-30px my-2" alt="" />
-                </a>
-            </div>
         </div>
     </div>
 </div>
