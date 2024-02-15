@@ -14,7 +14,8 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        return view('services.index');
+        $services = Service::orderBy('id', 'desc')->get();
+        return view('services.index', compact('services'));
     }
 
     /**
@@ -62,7 +63,7 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        return view('services.edit', compact('service'));
     }
 
     /**
@@ -74,7 +75,11 @@ class ServiceController extends Controller
      */
     public function update(Request $request, Service $service)
     {
-        //
+        $service->intitule = $request->txt_intitule;
+        $service->description = $request->txt_description;
+        $service->save();
+
+        return redirect()->route('services.index');
     }
 
     /**
