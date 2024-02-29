@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::resource('services', ServiceController::class);
+Route::resource('categories', CategoryController::class);
 
 Route::get('/', function () {
     return view('about');

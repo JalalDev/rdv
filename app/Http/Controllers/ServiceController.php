@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -25,7 +26,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        return view('services.create');
+        $categories = Category::all();
+        return view('services.create', compact('categories'));
     }
 
     /**
@@ -39,6 +41,7 @@ class ServiceController extends Controller
         Service::create([
             'intitule' => $request->txt_intitule,
             'description' => $request->txt_description,
+            'category_id' => $request->txt_category_id,
         ]);
 
         return redirect()->route('services.index');
@@ -63,7 +66,8 @@ class ServiceController extends Controller
      */
     public function edit(Service $service)
     {
-        return view('services.edit', compact('service'));
+        $categories = Category::all();
+        return view('services.edit', compact('service', 'categories'));
     }
 
     /**
@@ -77,6 +81,7 @@ class ServiceController extends Controller
     {
         $service->intitule = $request->txt_intitule;
         $service->description = $request->txt_description;
+        $service->category_id = $request->txt_category_id;
         $service->save();
 
         return redirect()->route('services.index');
@@ -90,6 +95,7 @@ class ServiceController extends Controller
      */
     public function destroy(Service $service)
     {
-        //
+        $service->delete();
+        return redirect()->route('services.index');
     }
 }

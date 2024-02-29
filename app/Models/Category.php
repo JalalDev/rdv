@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class Category extends Model
 {
     protected $guarded = [];
 
-    public function category()
+    public function services()
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Service::class);
     }
 }
