@@ -5,7 +5,25 @@
 
 <div class="card">
     <div class="card-body">
-        <a href="{{ route('services.create') }}" class="btn btn-success mb-3">Ajouter un service</a>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a href="{{ route('services.create') }}" class="btn btn-success mb-3">Ajouter un service</a>
+            </div>
+            <div class="col-md-6">
+                <form action="{{ route('services.search') }}" method="POST">
+                    @csrf
+                    <select name="category_id" class="form-select">
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->intitule }}</option>
+                        @endforeach
+                    </select>
+                    <button type="submit" class="btn btn-success">Filtrer</button>
+                    <a href="{{ route('services.index') }}" class="btn btn-info">Initialiser</a>
+                </form>
+            </div>
+        </div>
+
 
         <table class="table table-striped table-bordered table-hover">
             <thead>

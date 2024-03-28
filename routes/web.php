@@ -5,6 +5,7 @@ use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+Route::post('services/search', [ServiceController::class, 'search'])->name('services.search');
 Route::resource('services', ServiceController::class);
 Route::resource('categories', CategoryController::class);
 
